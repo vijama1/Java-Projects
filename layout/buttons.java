@@ -1,0 +1,74 @@
+import java.awt.*;
+class buttons
+{
+	public static void main(String args[])
+	{
+		Frame f=new Frame("Buttons");
+		f.setSize(400,400);
+		GridLayout g1=new GridLayout(2,2);
+		f.setLayout(g1);
+		Panel p1=new Panel();
+		GridLayout g2=new GridLayout(2,1);
+		p1.setLayout(g2);
+		Button b1=new Button("1");
+		Button b2=new Button("2");
+		p1.add(b1);
+		p1.add(b2);
+		f.add(p1);
+		GridLayout g3=new GridLayout(0,3);
+		Panel p2=new Panel();
+		p2.setLayout(g3);
+		Button b3=new Button("3");
+		Button b4=new Button("4");
+		Button b5=new Button("5");
+		p2.add(b3);
+		p2.add(b4);
+		p2.add(b5);
+		f.add(p2);
+		GridLayout g4=new GridLayout(0,2);
+		Panel p3=new Panel();
+		p3.setLayout(g4);
+		Panel p4=new Panel();
+		GridLayout g5=new GridLayout(2,0);
+		p4.setLayout(g5);
+		Button b6=new Button("6");
+		Button b7=new Button("7");
+		p4.add(b6);
+		p4.add(b7);
+		p3.add(p4);
+		Panel p5=new Panel();
+		GridLayout g6=new GridLayout(3,0);
+		p5.setLayout(g6);
+		Button b8=new Button("8");
+		Button b9=new Button("9");
+		Button b10=new Button("10");
+		p5.add(b8);
+		p5.add(b9);
+		p5.add(b10);
+		p3.add(p5);
+		f.add(p3);
+		GridLayout g7=new GridLayout(2,0);
+		Panel p6=new Panel();
+		p6.setLayout(g7);
+		Panel p8=new Panel();
+		GridLayout g8=new GridLayout(0,2);
+		p8.setLayout(g8);
+		Button b11=new Button("11");
+		Button b12=new Button("12");
+		p8.add(b11);
+		p8.add(b12);
+		p6.add(p8);
+		Panel p9=new Panel();
+		GridLayout g9=new GridLayout(0,3);
+		p9.setLayout(g9);
+		Button b13=new Button("13");
+		Button b14=new Button("14");
+		Button b15=new Button("15");
+		p9.add(b13);
+		p9.add(b14);
+		p9.add(b15);
+		p6.add(p9);
+		f.add(p6);
+		f.setVisible(true);
+	}
+}
